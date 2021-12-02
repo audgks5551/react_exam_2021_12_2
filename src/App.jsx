@@ -1,9 +1,18 @@
 import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div>쓸데없는 파일 제거</div>;
+  const [text, setText] = useState("");
+  return (
+    <div className="App">
+      <input
+        type="text"
+        onChange={({ target: { value } }) => {
+          setText(value);
+        }}
+        value={text}
+      />
+    </div>
+  );
 }
 
 export default App;
