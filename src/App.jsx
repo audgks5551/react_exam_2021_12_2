@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-function App() {
+const App = () => {
   const [text, setText] = useState("");
+
   return (
     <div className="App">
       <input
@@ -13,6 +14,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
 export default App;
